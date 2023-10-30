@@ -2,14 +2,19 @@
     <head>
         <meta charset="utf8"/>
         <script>
-            var a = 12;
+           var a = 12;
+           if (true) {   // always executed (beacuse always true)
             var b = 56;
-            var c = a + b;
-            var s1 = "My name is ";
-            var firstname = "Bill";
-            console.log("a + b = " + a + b);
+            var c = 89;
+            console.log("In the brace:");
+            console.log("a = " + a);
+            console.log("b = " + b);
             console.log("c = " + c);
-            console.log(s1 + firstname);
+        }
+        console.log("After the brace:");
+        console.log("a = " + a);
+        console.log("b = " + b);
+        console.log("c = " + c);
         </script>
     </head>
     <body>
